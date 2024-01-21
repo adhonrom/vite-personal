@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website Adhon using Tailwind CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,500;1,6..12,600;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="h-1/5 lg:h-screen bg-gradient-to-t from-indigo-200 relative">
+
+
+
+    
+
+    <!-- header -->
+    <header
+      class="fixed top-0 right-0 left-0 md:py-1 transition-all duration-300"
+    >
+      <nav
+        class="max-w-7xl mx-auto bg-gray-800 md:bg-transparent p-5 order-[10001]"
+      >
+        <div class="flex items-center justify-between">
+
+          <div class="flex items-center gap-2">
+            <img class="h-12 w-12" src="./img/logo-Adhon.png"  alt="">
+            <span class="text-2xl font-bold text-blue-600">Adhondev.</span>
+        </div>
+     
+          <!-- ukuran large-->
+          <div class="hidden md:flex space-x-10">
+            <a href="#home" class="text-blue-400 hover:text-gray-300">Home</a>
+            <a href="#projects" class="text-blue-400 hover:text-gray-300">Projects</a>
+            <a href="#resume" class="text-blue-400 hover:text-gray-300">Contact Us</a>
+          </div>
+          <!-- ukuran mobile -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-blue-400 text-2xl">
+              <i class="bx bx-menu"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <a href="#home" class="block text-blue-400 py-2 mt-3 hover:bg-gray-700"
+            >Home</a
+          >
+          <a href="#projects" class="block text-blue-400 py-2 hover:bg-gray-700"
+            >Projects</a
+          >
+          <a href="#resume" class="block text-blue-400 py-2 hover:bg-gray-700">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner section -->
+    <section class="max-w-7xl mx-auto px-5 my-12" id="home">
+      <div
+        class="flex md:flex-row flex-col justify-between items-center text-blue-600 gap-4 py-10"
+      >
+        <div class="md:w-1/2">
+          <p class="text-xl font-nunito font-light mt-8 mb-4">
+            Hello, I'm</span>
+          </p>
+          <h1 class="font-extrabold text-4xl mb-8">Adhon</h1>
+          <p class="text-2xl font-nunito font-thin mb-6">
+            Sedang Belajar Fullstack Web di Devscale
+          </p>
+          <p class=" font-nunito font-italic  text-gray-500  font-light text-xl mb-12 md:w-3/4 leading-8">
+           Masih pemula banget, mohon bimbingan semua yaa..
+          </p>
+          <button id="confettiBtn" class="bg-indigo-600 text-white text-sm w-fit px-3 py-2 rounded-md font-extralight" href="#contact">
+            Let's Talk
+          </button>
+
+        
+          <!-- social media -->
+        
+
+          <!-- social btn -->
+          <div class="mt-12 mb-8 flex gap-4 items-center">
+            <p>Check out My:</p>
+            <div class="flex space-x-3">
+                <a href="https://www.instagram.com/rom_adhon/" target="_blank">
+                    <i class="ph ph-instagram-logo w-8 h-8"></i>
+
+                 <a href="https://twitter.com/rom_adhon" target="_blank">
+                    <i class="ph ph-twitter-logo"></i>
+                </a>
+                <a href="https://www.facebook.com/romadhonesia" target="_blank">
+                    <i class="ph ph-facebook-logo"></i>
+                </a>
+                <a href="https://wa.me/628175022498" target="_blank">
+                    <i class="ph ph-whatsapp-logo"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class=" md:w-1/2 order-first md:order-none">
+          <img class="rounded-full h-60 w-60" src="./img/FotoAdhon.jpeg" alt="" class="md:ml-20 w-full" />
+        </div>
+      </div>
+    </section>
+
+    <!-- service section -->
+    <section class="max-w-7xl mx-auto px-5 my-6 text-blue-500" id="Services">
+      <div class="text-center">
+        <p class="mb-3 font-medium">.</p>
+        <h3 class="text-3xl font-thin mb-16"> Materi Yang Sedang Dipelajari</h3>
+      </div>
+      <!-- service cards -->
+      <div
+        class="my-16 flex flex-col md:flex-row justify-around items-center gap-12"
+      >
+        <div
+          class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+        >
+          <img
+            src="./img/JavaScript-logo.png"
+            alt=""
+            class="w-[196px] mb-12 mx-auto"
+          />
+          <h5 class="text-center my-5 text-xl">Javascript</h5>
+          <p class="text-justify font-thin">
+            JavaScript adalah bahasa pemrograman yang digunakan developer untuk membuat halaman web yang interaktif
+          </p>
+        </div>
+        <div
+          class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+        >
+          <img
+            src="./img/logo-next-js.jpeg"
+            alt=""
+            class="w-[196px] mb-12 mx-auto"
+          />
+          <h5 class="text-center my-5 text-xl">Next JS</h5>
+          <p class="text-justify font-thin">
+            Next.js adalah framework open-source untuk membuat aplikasi web menggunakan bahasa pemrograman JavaScript.
+          </p>
+        </div>
+        <div
+          class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+        >
+          <img
+            src="./img/npmlogo.png"
+            alt=""
+            class="w-[196px] mb-12 mx-auto"
+          />
+          <h5 class="text-center my-5 text-xl">N P M</h5>
+          <p class="text-justify font-thin">
+            Package manager dan repositori software dalam bahasa pemrograman JavaScript yang digunakan untuk memasang, menghapus, dan mengelola library.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="px-5 my-32 mx-auto max-w-7xl" id="projects">
+      <div class="text-center text-blue-400">
+        <h3 class="text-3xl font-bold mb-5">
+          Recent Projects</span>
+        </h3>
+        <p class="mb-6 md:w-3/4 mx-auto">
+         Ini adalah Display Project yang sedang dan akan kami buat
+         masih dalam proses...
+        </p>
+      </div>
+      <div
+        class="flex md:flex-row flex-col items-center justify-between gap-8 my-20"
+      >
+        <div
+          class="border border-primary shadow-xl shadow-[#5dadec3b] md:w-[741px] md:h-96 mx-auto rounded-2xl p-5 md:p-0"
+        >
+          <img src="src/img/project-1.svg" alt="" class=" p-5 w-full" />
+        </div>
+        <div
+          class="border border-primary shadow-xl shadow-[#5dadec3b] md:w-[741px] md:h-96 mx-auto rounded-2xl p-5"
+        >
+          <img src="src/img/project-2.svg" alt="" class="w-full p-5" />
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="max-w-7xl mx-auto px-5 my-16">
+        <h4 class="text-2xl text-blue-400 pt-12 mb-12"></h4>
+        <div class="text-blue-400 md:ml-16 flex flex-col md:flex-row justify-between md:items-center gap-6">
+          <div class="md:w-1/3 md:pl-10">
+            <h5 class="mb-3">Company</h5>
+            <a href="#" class="block my-2 text-sm text-blue-300">About Us</a>
+            <a href="#" class="block my-2 text-sm text-blue-300">project-1</a>
+            <a href="#" class="block my-2 text-sm text-blue-300">Contact Us</a>
+          </div>
+
+
+          <div class="md:w-1/3">
+            <h5 class="mb-5">Subscribe to our Newsletter</h5>
+            <div class="relative">
+              <input type="email" name="email" id="email" placeholder="Enter your Email" class="bg-[#c0c9f1] py-5 pl-5 rounded-lg"> 
+              <input type="submit" value="Subscribe" class="bg-primary py-4 px-8 rounded-lg absolute left-44 top-1">
+            </div>
+          </div>
+
+        </div>
+        <p class="text-center mb-3" > Crafted by Adhon </p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
